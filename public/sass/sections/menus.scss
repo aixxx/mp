@@ -1,0 +1,48 @@
+.menu-item {
+    .actions {
+        display: none;
+        a {
+            display: inline-block;
+            padding: 0 8px;
+
+            i {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &:hover {
+        > .menu-item-heading > .actions {
+            display: block;
+            transition: all 0.3s;
+        }
+
+        background: #f4f5f9;
+    }
+
+    &.current {
+        background: rgba(0, 185, 255, 0.06);
+    }
+
+    .list-group.sub-buttons {
+        margin: 10px -15px -10px;
+        border-top:1px solid $light-border-color;
+        background: #fff;
+
+        &.no-menus {
+            border:none;
+            margin:0;
+        }
+
+        .menu-item {
+            margin-left: 30px;
+            padding: 5px 15px;
+            border-left: 1px solid $light-border-color;
+
+            .actions .add-sub{
+                display:none;
+            }
+        }
+    }
+}

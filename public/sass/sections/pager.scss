@@ -1,0 +1,35 @@
+.viease-pager {
+    clear: both;
+    &:after {
+        content: " ";
+        display: table;
+        clear:both;
+    }
+
+    .viease-pager-inner {
+        float: right;
+    }
+    &.border-top {
+        border-top:1px solid #ececec;
+    }
+
+    padding:10px 0;
+
+    a.btn {
+        border:1px solid #ddd;
+        margin:0 5px;
+        &:hover {
+            background: #ececec;
+        }
+    }
+
+    input {
+        display: inline-block;
+        max-width: 80px;
+        margin-left: 10px;
+    }
+
+    span {
+        margin:0 2px;
+    }
+}

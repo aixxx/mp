@@ -1,0 +1,37 @@
+.fans-list {
+    padding:0;
+    .fan-item {
+        border-right: 1px solid #f4f4f4;
+        border-bottom: 1px solid #f4f4f4;
+        height: 65px;
+        overflow: hidden;
+        &:hover {
+            background: rgba(241, 241, 241, 0.37);
+        }
+
+        .media {
+            padding: 10px 0;
+        }
+    }
+
+    .popover {
+        min-width:260px;
+    }
+}
+
+.fan-avatar {
+    border-radius: 50%;
+}
+
+.fan-avatar-small {
+    max-width:45px;
+    height:45px;
+}
+
+.popover-table-label {
+    min-width:60px;
+}
+
+.popover table tr td {
+    padding: 5px 0;
+}

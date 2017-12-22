@@ -1,0 +1,45 @@
+#media-picker {
+    .modal-body {
+        padding:0;
+        .panel {
+            border:none;
+            box-shadow: none;
+        }
+    }
+}
+
+.media-preview {
+    overflow:hidden;
+    text-align: center;
+    img {
+        width: auto;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+.media-item {
+    span.selected-item {
+        display: none;
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,185,255, .3);
+        border: 3px solid $brand-success;
+
+        i {
+            font-size: 40px;
+            color: $brand-success;
+            position: absolute;
+            right: 10px;
+            bottom:-5px;
+        }
+    }
+
+    &.selected span.selected-item {
+        display: block;
+    }
+}
+

@@ -1,0 +1,89 @@
+.media-card{
+    margin-bottom:12px;
+
+    > a{
+        display:block;
+        position:relative;
+        border:1px solid #ececec;
+        background-color: #313232;
+        height: 150px;
+        overflow:hidden;
+        color: #fff;
+        transition: all 500ms ease-in-out;
+
+        .placeholder {
+            display: block;
+            height:100%;
+            &.bg-video {
+                background: #2db3a0;
+            }
+
+            &.bg-vioce {
+                background: #60a7e7;
+            }
+        }
+
+        > a:hover{
+            box-shadow:0 2px 5px rgba(0,0,0,.3);
+            text-decoration:none;
+        }
+    }
+
+     h2{
+        bottom: 0;
+        font-size: 14px;
+        padding: 8px;
+        margin:0;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(100,100,100, .7);
+    }
+    .icon {
+        font-size: 60px;
+        opacity: 0.6;
+        position: absolute;
+        right: 40%;
+        top: 13%;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        transition:all 500ms ease-in-out;
+    }
+    > a:hover .icon {
+        color:#fff;
+        opacity:1;
+        text-shadow:0 1px 3px rgba(0,0,0,.8);
+    }
+    .duration{
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        left: 12px;
+        line-height: 13px;
+        padding: 2px 3px 1px;
+        position: absolute;
+        top: 12px;
+        transition:all 500ms ease;
+    }
+
+    > a:hover .duration{
+        background-color:#000;
+    }
+}
+@media (min-width:320px) and (max-width: 480px) {
+    .media-card .icon {
+        font-size: 35px;
+        right: 36%;
+        top: 27%;
+    }
+    .media-card h2{
+        bottom: 0;
+        font-size: 12px;
+        height: 22px;
+        margin: 8px 0 0;
+    }
+}

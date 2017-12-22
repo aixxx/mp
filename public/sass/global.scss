@@ -1,0 +1,83 @@
+// 全局样式
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    background: #e7e8eb;
+    padding-top: $header-height;
+}
+
+a {
+    color: #666;
+    &:hover {
+        color: #333;
+    }
+    &:focus, &:hover, &:hover {
+        outline: none;
+        text-decoration:none;
+    }
+}
+
+.list-group-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline:none;
+}
+
+.loading {
+    left: 30%;
+    top: $header-height + 4;
+    right: 30%;
+    z-index: 2000;
+    background-color: rgba(80,80,80,.15);
+    position: fixed;
+    height: 40px;
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+
+    .plus-loader:not(:required) {
+        height:20px;
+        width:20px;
+        display:inline-block;
+        vertical-align: middle;
+    }
+
+}
+
+.ajax-loading {
+
+    .loader-wrapper {
+        height: 80px;
+        position:relative;
+        .plus-loader:not(:required) {
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:24px;
+            height:24px;
+            margin-top:-12px;
+            margin-left:-12px;
+        }
+    }
+}
+
+.popup {
+    cursor: -webkit-zoom-in;
+}
+
+.panel .panel-footer {
+    clear: both;
+
+    .pagination {
+        margin:8px 0;
+    }
+}
