@@ -1,0 +1,13 @@
+.phpintel/
+*storage/framework/session/*
+storage/logs/laravel.log
+composer.lock
+.env
+.DS_Store
+*/node_modules
+/node_modules
+Homestead.yaml
+*/.sass-cache
+sftp-config.json
+.idea
+/vendor/
